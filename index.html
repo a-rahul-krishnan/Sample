@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Copperplate+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Weather Forecast</h1>
+  </header>
+  
+  <div class="container">
+    <form id="location-form">
+      <input type="text" id="location-input" placeholder="Enter location (e.g.,London,Berlin)" style="width: 300px;">
+      <button type="submit" style="width: 140px;">Get Forecast</button>
+      <button id="refresh-button" onclick="refreshResponse()">
+        <img src="images/refresh-icon.png" alt="Refresh Icon" style="width: 40px; height: 40px;">
+    </button>
+    </form>
+    <div id="weather-results"></div>
+  </div>
+  
+  <footer>
+    <p>A.Rahul Krishnan &copy; 2023</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function refreshResponse() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>

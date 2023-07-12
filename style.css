@@ -1,0 +1,81 @@
+body {
+  font-family: 'Copperplate Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  flex-grow: 1; 
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#weather-results {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#weather-results h2 {
+  margin-top: 0;
+}
+
+#weather-results p {
+  margin: 5px 0;
+}
+
+#refresh-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#refresh-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0; 
+}
